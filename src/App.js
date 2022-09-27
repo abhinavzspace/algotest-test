@@ -2,9 +2,9 @@ import React, { useState } from "react";
 import "tw-elements";
 import { getAllLegs, pushLegs } from "./api/Legs";
 import "./App.css";
-import Futures from "./components/leg/Futures";
-import Legs from "./components/leg/Legs";
-import Options from "./components/leg/Options";
+import Futures from "./components/Futures";
+import Legs from "./components/Legs";
+import Options from "./components/Options";
 import {
   LOTS,
   POSITION_TYPE,

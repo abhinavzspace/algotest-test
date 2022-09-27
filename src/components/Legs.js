@@ -5,7 +5,7 @@ import {
   STRIKE_PARAMETER,
   LOWER,
   UPPER,
-} from "../../constants";
+} from "../constants";
 
 const Legs = ({ legs, updateX, setLegs }) => {
   const update = (x, i) => (e) => {

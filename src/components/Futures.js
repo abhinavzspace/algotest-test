@@ -1,4 +1,4 @@
-import { LOTS, POSITION_TYPE } from "../../constants";
+import { LOTS, POSITION_TYPE } from "../constants";
 
 const Futures = ({ leg, setLeg, updateX }) => {
   const update = (x) => (e) => {

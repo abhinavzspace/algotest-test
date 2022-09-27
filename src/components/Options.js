@@ -5,7 +5,7 @@ import {
   POSITION_TYPE,
   STRIKE_PARAMETER,
   UPPER,
-} from "../../constants";
+} from "../constants";
 
 const Options = ({ leg, setLeg, updateX }) => {
   const update = (x) => (e) => {
