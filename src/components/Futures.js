@@ -1,4 +1,9 @@
-import { LOTS, POSITION_TYPE } from "../constants";
+import {
+  LOTS,
+  POSITION_TYPE,
+  POSITION_TYPE__BUY,
+  POSITION_TYPE__SELL,
+} from "../constants";
 
 const Futures = ({ leg, setLeg, updateX }) => {
   const update = (x) => (e) => {
@@ -34,8 +39,8 @@ const Futures = ({ leg, setLeg, updateX }) => {
           onChange={update(POSITION_TYPE)}
           defaultValue={leg.PositionType}
         >
-          <option value="PositionType.Sell">Sell</option>
-          <option value="PositionType.Buy">Buy</option>
+          <option value={POSITION_TYPE__SELL}>Sell</option>
+          <option value={POSITION_TYPE__BUY}>Buy</option>
         </select>
       </div>
     </div>

@@ -12,13 +12,16 @@ import {
   STRIKE_PARAMETER,
   LOWER,
   UPPER,
+  POSITION_TYPE__BUY,
+  ENTRY_TYPE__ENTRY_BY_STRIKE_TYPE,
+  STRIKE_TYPE__ATM,
 } from "./constants";
 
 let initialLeg = {
-  [POSITION_TYPE]: "PositionType.Buy", //or “PositionType.Buy”
+  [POSITION_TYPE]: POSITION_TYPE__BUY, //or “PositionType.Buy”
   [LOTS]: 1, //integer,
-  [ENTRY_TYPE]: "EntryType.EntryByStrikeType",
-  [STRIKE_PARAMETER]: "StrikeType.ATM", // or “StrikeType.OTM1” when
+  [ENTRY_TYPE]: ENTRY_TYPE__ENTRY_BY_STRIKE_TYPE,
+  [STRIKE_PARAMETER]: STRIKE_TYPE__ATM, // or “StrikeType.OTM1” when
   // EntryByStrikeType, or //number when EntryByPremium, object as {“Lower”:
   //number, “Upper”: //number} when EntryByPremiumRange, object as
   // {“Adjustment”: “Plus” or “Minus”, “Multiplier”: //number} when
